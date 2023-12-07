@@ -1,0 +1,5 @@
+t1=('a','b','c')
+t2=(12,45,55)
+result=dict(t1)
+dic=dict(t2)
+print(result,dic)
