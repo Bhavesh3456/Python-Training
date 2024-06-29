@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 300px;
+            width: 80%;
+            border: 1px solid black;
+            margin: 100px auto;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .fa-arrow-left{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 10px 0px;
+            position: relative;
+            left: 40%;
+            
+
+        }
+        .fa-arrow-right{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color: black;
+            padding: 10px 0px;
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../WD_23dec/doctor1.png" alt="" height="200px" width="200px">
+        <img src="../WD_23dec/sports car.jpg" alt="" height="200px" width="200px">
+        <img src="../WD_23dec/doctor2.png" alt="" height="200px" width="200px">
+        <img src="../WD_23dec/doctor3.png" alt="" height="200px" width="200px">
+    </div>
+    <i class="fa-solid fa-arrow-left" onclick="change(-1)"></i>
+    <i class="fa-solid fa-arrow-right" onclick="change(1)"></i>
+    <script>
+        let index=1
+        slider(index)
+        function change(n)
+        {
+            slider(index=index+n)
+        }
+        
+        function slider(n)
+        {
+            let image=document.querySelectorAll("img")
+            if(n>image.length)
+            {
+                index=1
+            }
+            if(n<1)
+            {
+                index=image.length
+            }
+            for(i=0;i<image.length;i++)
+            {
+                image[i].style.display="none"
+                
+            }
+            
+            
+            image[index-1].style.display="block"
+            
+        }
+        setInterval(() => {
+            change(1)
+        }, 3000);
+    
+        
+        
+    </script>
+
+</body>
+</html>

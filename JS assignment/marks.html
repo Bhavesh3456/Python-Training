@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            justify-content: center;
+            
+            
+        }
+        body{
+            border: 1px solid black;
+            height: 600px;
+            width: 300px;
+           
+            align-items: center;
+            margin: 5px auto;
+            column-gap: 10px;
+        }
+       
+        
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Marksheet for information tehnology </h1>
+    <table>
+        <tr>
+            <td>c programme</td>
+            <td><input type="number" name="" id="inp1"></td>
+        </tr>
+        <tr>
+            <td>c++ subject</td>
+            <td><input type="number" name="" id="inp2"></td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td><input type="number" name="" id="inp3"></td>
+        </tr>
+        <tr>
+            <td><label for="">HTML</label></td>
+            <td><input type="number" name="" id="inp4"></td>
+        </tr>
+        <tr>
+            <td><label for="">CSS</label></td>
+            <td><input type="number" name="" id="inp5"></td>
+        </tr>
+        <tr>
+            <td>php</td>
+            <td><input type="number" name="" id="inp6"></td>
+        
+        </tr>
+        <tr>
+            <td>core java</td>
+            <td><input type="number" name="" id="inp7"></td>
+        
+        </tr>
+        <tr>
+            <td></td>
+            <td> <button onclick="add()">submit</button></td>
+        </tr>
+    
+    </table>
+   
+    <div>Total is : <span id="result"></span>/350</div>
+    <div>Percentage is <span id="Percentage"></span>%</div>
+    <span id="text2"></span>
+    <script>
+        let Percentage=document.getElementById("Percentage")
+         let result=document.getElementById("result")
+         let inp1=document.getElementById("inp1")
+         let inp2=document.getElementById("inp2")
+         let inp3=document.getElementById("inp3")
+         let inp4=document.getElementById("inp4")
+         let inp5=document.getElementById("inp5")
+         let inp6=document.getElementById("inp6")
+         let inp7=document.getElementById("inp7")
+         let message=document.getElementById("text2")
+       function add()
+        {
+         
+          if(inp1.value>50 || inp2.value>50 || inp3.value>50 ||  inp4.value>50 || inp5.value>50 || inp6.value>50 ||  inp7.value>50 )
+           {
+              message.innerText="not allowed more than 50"
+              message.style.color="red"
+            }
+          else
+          {
+            let ans=Number(inp1.value)+Number(inp2.value)+Number(inp3.value)+Number(inp4.value)+Number(inp5.value)+Number(inp6.value)+Number(inp7.value)
+            let p=ans/350*100
+            Percentage.innerHTML=p
+            result.innerHTML=ans
+
+          }
+        }
+    
+    </script>
+</body>
+</html>
