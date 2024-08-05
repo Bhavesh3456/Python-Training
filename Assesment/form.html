@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Booking Form</h1>
+    <div class="container">
+        <label for="">Name</label>
+        <input type="text" name="" id="" pattern="[a-z]{3}" placeholder="Enter Your Name">
+        <label for="">Enter Your Mobile No</label>
+        <input type="tel" name="" id="" placeholder="Enter Mobile No">
+        <label for="">Email</label>
+        <input type="email" name="" id="">
+        <label for="">No of person</label>
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+        </select>
+        <select name="" id="s2" onchange="Booking()">
+            <option value="" hidden>Enter Your Booking</option>
+            <option value="Full">Full Day Booking </option>
+            <option value="Half">Half Day Booking</option>
+            <option value="Hour">Hourly Booking</option>
+        </select>
+        <input type="date" name="" id="i2">
+        <select name="" id="sel4"></select>
+        <input type="datetime-local" name="" id="t2" placeholder="Enter Time and date">
+    
+        <script>
+            let sel = document.getElementById("s2")
+            let inp5=document.getElementById("i2")
+            let s=document.getElementById("sel4")
+            let t1=document.getElementById("t2")
+
+            function Booking() {
+                if (sel.value == "Full") {
+                    inp5.style.display="block"
+                    t1.style.display="none"
+
+
+
+                }
+                else if (sel.value == "Half") {
+                    inp5.style.display="block"
+                    let opt1=document.createElement("option")
+                    opt1.innerText="Breakfast"
+                    let opt2=document.createElement("option")
+                    opt2.innerText="Lunch"
+                    let opt3=document.createElement("option")
+                    opt3.innerText="Dinner"
+                    s.append(opt1,opt2,opt3)
+                    s.style.display="block"
+                    t1.style.display="none"
+                    
+                    
+                    
+
+
+
+                }
+                else if(sel.value=="Hour"){
+                    
+                    t1.style.display="block"
+                    inp5.style.display="none"
+
+
+
+                }
+            }
+
+        </script>
+
+
+    </div>
+</body>
+
+</html>

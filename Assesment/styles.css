@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+}
+.container label{
+    font-size: 19px;
+    font-weight: 600;
+
+}
+.container input{
+    padding: 10px 90px 10px 5px;
+}
+.container select{
+    margin: 10px 90px 10px 0px;
+}
+.inp1{
+    padding: 5px 60px 5px 5px;
+}
+input[type="date"]+select{
+    display: none;
+}
+input[type="datetime-local"]{
+    display: none;
+}
