@@ -1,0 +1,20 @@
+.pbSliderContainer {
+    position:relative;
+  }
+  .pbSlider {
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  
+  .pbSlider img {
+    max-width:100%;
+  }
+  
+  .active {
+    display:block;
+  }
+  
+  .hidden {
+    display:none;
+  }

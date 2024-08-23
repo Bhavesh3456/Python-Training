@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .f1{
+            display: none;
+            border: 1px solid purple;
+            background-color: purple;
+            padding: 90px;
+            margin: 0px auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            box-shadow: 0 0 600px 800px rgba(0, 0, 0, 0.5)
+
+        }
+        .b1{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+        .f1 p{
+            color: black;
+            font-weight: 800;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <center><button id="b1">open modal box</button><button id="k3">open second modal</button></center>
+    <div class="f1" id="s2">
+        <p>the box model</p>
+        <button class="b1" id="b2">close</button>
+    </div>
+    <div class="f1" id="s3">
+        <p>the second model</p>
+        <button class="b1" id="b3">close</button>
+    </div>
+    <script>
+        let s=document.getElementById("s2")
+        let btn=document.getElementById("b1")
+        let b4=document.getElementById("k3")
+        let h7=document.getElementById("b2")
+
+        let b3=document.getElementById("b3")
+        let s5=document.getElementById("s3")
+        btn.addEventListener('click',function(){
+            s.style.display="block"
+        })
+        b4.addEventListener('click',function(){
+            s5.style.display="block"
+        })
+        b3.addEventListener('click',function(){
+            s5.style.display="none"
+        })
+        h7.addEventListener('click',function(){
+            s.style.display="none"
+        })
+        
+        
+
+
+    </script>
+</body>
+</html>

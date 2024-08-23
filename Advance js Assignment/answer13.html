@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="get()">clickme</button>
+    <div id="d1"></div>
+    <script>
+        // let ind="practice.txt"
+        // fetch(ind)
+        // .then((res)=>{return res.text()})
+        // .then((data)=>{console.log(data)})
+
+        // fetch('practice.txt')
+        // .then((res)=>{return})
+        // .then((data)=>{console.log(data);
+        // })
+        // fetch("https://fakestoreapi.com/products")
+        // .then((res)=>{return res.json()})
+        // .then((data)=>{;
+        // })
+        function get() {
+            fetch("https://fakestoreapi.com/products")
+                .then((res) => { return res.json() })
+                .then((data) => {
+                    let ht=`<li>Name</li>`
+                    data.map((v)=>{ 
+                        ht=ht+`
+                            <li>${v.price}</li>
+                            
+                            `
+
+
+                    })
+                    document.getElementById("d1").innerHTML=ht+"</ol>"
+                })
+        
+            
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">First Name</label>
+        <input type="text" name="" id="i1"><br><br>
+        <label for="">Last Name</label>
+        <input type="text" name="" id="i2"><br>
+        <label for="">Phone</label>
+        <input type="tel" name="" id="ph1"><br>
+        <input type="submit" name="" id="" value="submit" onclick="check()"><br>
+
+    </form>
+    <script>
+        let in1 = document.getElementById("i1")
+        let in2 = document.getElementById("i2")
+        let ph=document.getElementById("ph1")
+        let pat = /^[a-zA-Z]+$/
+        let phi=/^\d{10}$/
+        function check() {
+            if (in1.value =="" && in2.value=="") {
+                alert("First Name must be filled")
+            }
+            else if(!(pat.test(in1.value) && pat.test(in2.value))){
+                alert("Submit the form in pattern")
+
+            }
+            else if(!(phi.test(ph))){
+                alert("Phone number should be in 10 digit")
+            }
+            else{
+                alert("ok")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

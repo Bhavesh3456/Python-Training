@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="window.slider.css"/>
+</head>
+<body>
+      <div id="slider-1" class="window-slider">
+          <!-- TOP LEFT SLIDER -->
+          <div class="tl-window">
+            <img src="audi.jpg">
+            <img src="audi2.jpg">
+          </div>
+          
+          <!-- TOP RIGHT SLIDER -->
+          <div class="tr-window">
+            <img src="mercedes1.jpg">
+            <img src="mercedes2.jpg">
+          </div>
+          
+          <!-- BOTTOM LEFT SLIDER -->
+          <div class="bl-window">
+            <img src="rr1.jpg">
+            <img src="rr2.jpg">
+          </div>
+          
+          <!-- BOTTOM RIGHT SLIDER -->
+          <div class="br-window">
+            <img src="supra1.jpg">
+            <img src="supra2.jpg">
+          </div>
+      </div>
+
+      <link rel="stylesheet" type="text/css" href="window.slider.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="window.slider.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+            $('#slider-1').windowSlider();
+          }); 
+      </script>
+</body>
+</html>
