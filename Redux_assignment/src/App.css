@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.f1{
+    margin: 0px auto;
+    background-color: black;
+    color: white;
+}
+.design{
+    color: white;
+    border: 1px solid green;
+    background-color: green;
+    text-decoration: none;
+    padding: 5px;
+}
+.d1{
+    color: white;
+    background-color: gray;
+    border: 1px solid gray;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px 10px;
+}
+.d2{
+    color: white;
+    border: 1px solid red;
+    background-color: red;
+    padding: 7px;
+    margin-bottom: 5px;
+
+    
+}
+.t1{
+    color: green;
+    text-decoration: none;
+    text-align: center;
+
+}
+.o3{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+}
+table td{
+    padding: 10px;
+}
