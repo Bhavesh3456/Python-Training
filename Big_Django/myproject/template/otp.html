@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <section class="contact_section layout_padding">
+        <div class="container">
+          <div class="heading_container">
+            <h2>
+              Log In
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_container">
+                <form action="{% url 'otp' %}" method="post">
+                  {% csrf_token %}
+    
+                  <div>
+                    <input type="email" name="email" placeholder="Enter email" />
+                  </div>
+    
+                
+                  <div class="btn_box">
+                    <button type="submit">
+                      SEND
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="map_container">
+                <div class="map">
+                  <div id="googleMap"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
