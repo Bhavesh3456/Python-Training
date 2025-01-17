@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid lightgreen;
+            background-color: lightgreen;
+            height: 900px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 500px;
+            width: 400px;
+            position: relative;
+            top: 200px;
+            left: 400px;
+            background-color: white;
+            z-index: 1;
+
+        }
+        .bgimg{
+            background-image: url(mercedese.jpg);
+            height: 80%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .smallimg{
+            background-image: url(download.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            margin: 10px 5px;
+            background-position: center;
+        }
+        .details{
+            border: 1px solid white;
+            height: 700px;
+            width: 700px;
+            background-color: white;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+        .details div{
+            text-transform: capitalize;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px auto;
+            width: 40%;
+        }
+        .details .cod{
+            color: gray;
+            text-transform: uppercase;
+        
+            font-size: small;
+    
+        }
+        .details .price{
+            color: red;
+            font-size: medium;
+            margin: auto;
+            width: 40%;
+        
+        }
+        ul{
+            margin: auto;
+            width: 40%;
+
+        }
+        li{
+            text-transform: capitalize;
+        
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="bgimg"></div>
+            <div class="smallimg"></div>
+            
+        </div>
+        <div class="details">
+            <div>mercedese car</div>
+            <div class="cod">cod 45999</div>
+            <div class="price">R$ 7.99</div>
+            <div class="cod">benefits</div>
+            <ul>
+             <li>ai voice system</li>
+             <li>high model features</li>
+             <li>great interior</li>
+             <li>comfort seat</li>
+            
+            </ul>
+
+           
+
+        </div>
+    </div>
+</body>
+</html>

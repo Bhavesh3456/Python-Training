@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul type="square">
+
+    </ul>
+    <script>
+        let list1=document.querySelector("ul")
+        let list=document.createElement("li")
+        list.innerHTML="<div>orange</div> <li> apple </li> <li> mango </li>  "
+        list1.prepend(list)
+    </script>
+</body>
+</html>

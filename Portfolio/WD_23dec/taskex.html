@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            height: 300px;
+            width: 300px;
+            border: 1px solid green;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="border"></div>
+    <script>
+        let b=document.createElement("button")
+        let a=document.querySelector(".border")
+        b.textContent="click me"
+        a.after(b)
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+        }
+        h2{
+            color: white;
+
+        }
+        input{
+            padding: 10px 5px;
+        }
+       
+        button{
+            padding: 10px 5px;
+            display: block;
+
+        }
+        #computer_guess{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>stone paper scissor</h1>
+    <h2>choose your number</h2>
+    <input type="number" name="" id="" placeholder="choose the number">
+    <button id="btn" onclick="game()">Submit</button>
+    <div id="computer_guess">Computer no : <span id="random"></span></div>
+    <h3 id="result">Result</h3>
+    <script>
+        let random=document.querySelector("#random")
+        let computer=Math.floor(Math.random()*3+1)
+       
+        function game()
+        {
+            let input=document.querySelector("input")
+            if (input.value==1 && computer==3)
+            {
+                result.innerHTML="you won";
+                
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+                document.getElementById("btn").style.display="none";
+             
+            }
+            else if(input.value==1 && computer==2)
+            {
+                result.innerHTML="computer won";
+                
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+                document.getElementById("btn").style.display="none";
+                
+
+            }
+            else if(input.value==3 && computer==2)
+            {
+                result.innerHTML="you won";
+                
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+               
+                document.getElementById("btn").style.display="none";
+            }
+            else if(input.value==2 && computer==3)
+            {
+                result.innerHTML="computer won";
+                
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+                
+                document.getElementById("btn").style.display="none";
+            }
+            else if(input.value==3 && computer==1)
+            {
+                result.innerHTML="computer won";
+                
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+               
+                document.getElementById("btn").style.display="none";
+            }
+            else if(input.value==2 && computer==1)
+            {
+                result.innerHTML="you won";
+                
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+               
+                document.getElementById("btn").style.display="none";
+            }
+            else
+            {
+                result.innerHTML="Tie"
+                result.style.color="green"
+                input.style.display="none"
+                random.innerHTML=`<b> ${computer} </b>`
+               
+                
+            }
+
+        }
+    </script>
+
+
+</body>
+</html>

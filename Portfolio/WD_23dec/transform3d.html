@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+        
+      }
+      body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      
+      }
+    
+      .card{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+      }
+      .front,.back{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        
+      
+      }
+      .front{
+        background-image: url(doctor1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+        
+        
+      }
+      .card:hover{
+        transform: rotateY(180deg);
+      }
+      .back p{
+        color: purple;
+        overflow: hidden;
+      }
+      .back{
+        transform: rotateY(180deg);
+        background-color: black;
+      }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front"></div>
+            <div class="back">
+              <p>back of card</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

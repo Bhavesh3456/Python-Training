@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+.container{
+   
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 24px 7rem;
+    
+   
+    
+
+}
+.bgimage{
+    background-image: url(netflix\ background.jpg);
+    background-size: cover;
+    height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    
+   
+
+
+}
+.content1{
+    color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 70%;
+    margin: 0px 0px 0px 16px;
+    
+     
+    
+     
+
+}
+.c2{
+    border: 1px solid red;
+    height: 30px;
+    width: 60px;
+    color: white;
+    text-transform: capitalize;
+    background-color: red;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0px;
+    text-align: center;
+   
+    
+    
+
+   
+    
+
+}
+select{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 70px;
+    margin: 10px 0px 0px 0px;
+    
+    
+}
+.content2{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3px;
+   
+    
+    
+}
+.container2 h1{
+    font-size: 39px;
+    font-style: sans-serif;
+    color: white;
+    padding: 20% 0px 0px 0px;
+
+
+
+}
+.container2{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.container2 p{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+    margin: 16px 0px 0px 0px;
+
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+.container3 input{
+    padding: 16px 38px 10px 5px;
+    color: white;
+    background-color: black;
+    margin: 6px 0px 0px 0px;
+    
+}
+#button{
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px 5px 5px;
+    font-weight: 500;
+    background-color: red;
+}
+input[placeholder="Enter Email"]:hover{
+    transform: translateY(45px);
+    transition: transform 0.5s;
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    border: 1px solid  black;
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.section2 div h1{
+    color: white;
+    font-size: 48px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    
+
+}
+.section2 div p{
+    color: white;
+    font-size: 48px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    
+}
+.section2 div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section3 .p2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+    
+
+}
+.p2 div h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    text-transform: capitalize;
+    margin: 100px 0px 0px 0px;
+    
+
+}
+.p2 div p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+.section3{
+    border: 1px solid black;
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    
+}
+hr{
+    border: 5px solid  gray;
+}
+.p2 div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.p2 img{
+    margin: 100px 0px 0px 0px;
+}
+.section4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    height: 700px;
+    width: 100%;
+    align-items: center;
+}
+.section4 div h1{
+    font-size: 40px;
+    color: white;
+    line-height: 45px;
+    
+    
+
+}
+.section4 div p{
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+#f1{
+   
+    
+    position: relative;
+    left: 55px;
+    top: 30%;
+
+    z-index: 1;
+}
+#f2{
+    z-index: 0;
+
+}
+#f3{
+    position: relative;
+    top: 20%;
+    z-index: 1;
+    right: 5%;
+}
+.section5{
+    border: 1px solid black;
+    height: 600x;
+    width: 100%;
+}
+.section5 h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+.part6{
+    border: 1px solid gray;
+    height: 80px;
+    width: 700px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+.part6 h4{
+    color: white;
+    font-size: x-large ;
+    padding: 10px 10px;
+
+}
+.part6 {
+    color: white;
+    padding: 10px 10px;
+    font-size: x-large;
+
+
+}
+footer{
+    border: 1px solid black;
+    height: 700px;
+    width: 100%;
+    margin: 72px 0px;
+    padding: 0px 32px;
+}
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+footer span{
+    color: #ffffffb3;
+    font-family: sans-serif;
+    font-size: 14px;
+   
+
+}
+footer span a{
+    color: #ffffffb3;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+.foot a{
+    color: #ffffffb3;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 10px 0px 0px 5px;
+    font-weight: lighter;
+
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 853px) { 
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container .content1{
+        
+        font-size: 25px;
+        padding: 2px;
+        width: 50%;
+        
+        
+        
+        
+        
+
+    }
+    
+   
+    .content2 select{
+       
+       text-align: center;
+    
+    }
+   
+   
+
+   
+    .bgimage{
+        height: 500px;
+        width: 100%;
+    }
+    .bgimage .container{
+        padding: 0px 20px;
+        
+    
+    }
+    .c2{
+       padding: 2px;
+       text-align: center;
+       
+    }
+    .container2{
+        display: flex;
+        align-items: center;
+      
+    }
+    .container2 h1{
+        font-size: 28px;
+    }
+  
+    .container2 p{
+        font-size: 22px;
+        padding: 0px 90px;
+    }
+    .container3{
+        margin: 0px auto;
+    }
+    .section2 div h1{
+        font-size: 20px;
+        margin: 40px 0px 0px 0px;
+        
+
+    }
+    .section2{
+        display: flex;
+        align-items: start;
+        height: 300px;
+        width: 100%;
+    }
+    .section2 div p{
+        font-size: 15px;
+        
+        
+    }
+    img[src="netflixtv.jpg"]{
+        height: 150px;
+        width: 150px;
+        margin: 40px 0px 0px 0px;
+    }
+    .section3 img[src="n2.jpg"]{
+        height: 100px;
+        width: 100px;
+        margin: 0px 30px 0px 0px;
+    
+        
+    }
+    .section3 .p2{
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+    .p2 div h1{
+        font-size: 17px;
+        margin: 5px 0px;
+       
+
+
+    }
+    .p2 div{
+        width: 50%;
+    }
+    .p2 div p{
+        font-size: 15px;
+        
+        
+
+
+    }
+   
+    .section3{
+       height: 300px;
+       width: 100%;
+      
+    }
+    .col .part6{
+        width: 95%;
+        margin: 10px 10px;
+    }
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 400px;
+            width: 100%;
+            
+
+        }
+        button{
+            margin: 10px 30px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+   <div class="container">
+    <button  onclick="redmode()">red</button>
+    <button  onclick="greenmode()">green</button>
+   </div>
+   <script>
+    function redmode()
+    {
+        let div=document.querySelector(".container")
+        div.style.backgroundColor="red"
+    }
+    function greenmode()
+    {
+        let green=document.querySelector(".container")
+        green.style.backgroundColor="green"
+    }
+
+   </script>
+</body>
+</html>

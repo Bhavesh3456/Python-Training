@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: black;
+            border: 1px solid black;
+            height: 100px;
+            width: 100%;
+            margin: 10px 0px;
+            align-content: center;
+
+        }
+        .nav a{
+            color: white;
+            padding: 20px 0px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+
+        }
+        .nested{
+            display: none;
+        }
+        .nested a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 0px;
+            text-align: center;
+            display: block;
+
+        }
+        .hover_li:hover .nested{
+            display: block;
+            position: absolute;
+            top: 70px;
+            z-index: 1;
+            background-color: black;
+            border: 1px solid black;
+            padding: 0px 20px;
+        }
+        .hover_li{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 20px 0px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <a href="">Home</a>
+        <a href="">Contact</a>
+        <li class="hover_li">Branch
+            <ul class="nested">
+                <a href="">Cg</a>
+                <a href="">Man</a>
+                <a href="">SG</a>
+            </ul>
+
+        </li>
+        <a href="">Gallery</a>
+        <a href="">About us</a>
+    </ul>
+</body>
+</html>

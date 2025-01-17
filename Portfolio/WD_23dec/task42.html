@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: black;
+
+        }
+        a{
+            padding: 200px;
+            padding-left: 20px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+        .fa-bars{
+            height: 10px;
+            color: white;
+        }
+       
+        .check:checked ~ .list{
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+            top: 100px;
+            display: block;
+            background-color: black;
+
+        }
+        .list{
+            color: white;
+            background-color: black;
+            list-style-type: none;
+            
+            
+        }
+        .list:hover li{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">home</a>
+        <a href="">about</a>
+        <input type="checkbox" name="" id="check">
+        <label for="check" id="checkbut">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="list">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        nav a{
+            color: white;
+            text-transform: capitalize;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 0px 30px;
+           
+            
+            
+        }
+        a[href="#link1"]::after{
+            background-color: white;
+            height: 1px;
+            width: 100%;
+            margin: 8px 0px 0px 0px;
+            display:inline-block;
+            content: "";
+            
+            
+
+
+        }
+        a[href="#link2"]::after{
+            background-color: white;
+            height: 1px;
+            width: 100%;
+            margin: 8px 0px 0px 0px;
+            display: inline-block;
+            content: "";
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in;
+           transform-origin: bottom right;
+            
+
+        }
+        a[href="#link2"]:hover::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+
+        }
+
+        
+
+      
+    </style>
+</head>
+<body>
+   <nav>
+    <a href="#link1">Home</a>
+    <a href="#link2">About</a>
+    <a href="">Contact</a>
+   </nav>
+</body>
+</html>

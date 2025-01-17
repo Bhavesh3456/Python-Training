@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: white;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        
+
+
+        }
+        a[href="#link1"]{
+            padding-left: 5px 5px;
+            color: black;
+            text-decoration: none;
+            font-size: large;
+            text-transform: capitalize;
+        }
+        span{
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        a[href="#link2"]{
+            color: black;
+            text-transform: capitalize;
+
+            font-size: large;
+            text-decoration: none;
+            padding: 5px;
+            padding-left: 70%;
+        }
+        a[href="#link3"]{
+            color: black;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: large;
+            padding: 5px;
+            padding-left: 20px;
+        }
+        a[href="#link4"]{
+            color: black;
+            padding: 5px;
+            padding-left: 20px;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: large;
+
+        }
+        a[href="#link1"]:hover{
+            
+        
+            
+
+            
+            background-color: gray;
+
+
+        }
+        .background{
+            background-image: url(architect.jpg);
+            height: 900px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 5px;
+        }
+        .background + h1{
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            text-transform: capitalize;
+            padding: 20px 15px;
+            
+            
+
+        }
+       
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        
+            
+        }
+        .bgimg1{
+            background-image: url(house5.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 300px;
+            width: 350px;
+           
+           
+
+
+        }
+        .bgimg1 div{
+            color: white;
+            background-color: black;
+            
+            padding: 5px 5px;
+            text-transform: capitalize;
+            width: 30%;
+    
+        }
+        
+        .bgimg2{
+            background-image: url(house2.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 300px;
+            width: 350px;
+
+        }
+        .bgimg2 div{
+            color: white;
+            background-color: black;
+            width: 30%;
+            text-transform: capitalize;
+            padding: 5px 5px;
+        }
+        .bgimg3{
+            background-image: url(house3.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 300px;
+            width: 350px;
+
+        }
+        .bgimg3 div{
+           color: white;
+           background-color: black;
+           width: 30%;
+           text-transform: capitalize;
+           padding: 5px 5px;
+        
+        }
+        .bgimg4{
+            background-image: url(house4.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 400px;
+            width: 350px;
+        }
+        .bgimg4 div{
+            color: white;
+            background-color: black;
+            text-transform: capitalize;
+            padding: 5px 5px;
+            width: 30%;
+        }
+        .container+h1{
+            text-transform: capitalize;
+            margin: 0px 25px;
+        }
+        .container ~ p{
+            text-transform: capitalize;
+            margin: 10px 25px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .box{
+            border: 1px solid white;
+            height: 500px;
+            width: 400px;
+            margin: 40px 10px;
+
+        }
+        .bgimg5{
+            background-image: url(team2.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50%;
+        }
+        .btext{
+            text-transform: capitalize;
+            font-size: 25px;
+            margin: 25px 0px;
+        }
+        .silvertext{
+            color: grey;
+            font-size: large;
+
+        }
+        a[href="#"]{
+        
+            text-decoration: none;
+            color: #000;
+            text-transform: capitalize;
+            padding: 8px 16px;
+            font-size: 20px;
+        
+            
+            
+            
+            
+            
+        }
+        .contact{
+            background-color: #f1f1f1;
+            border: 1px solid #f1f1f1;
+            height: 30px;
+            text-align: center;
+    
+            width: 400px;
+
+        }
+        .contact:hover{
+            background-color: gray;
+        }
+        .bgimg6{
+            background-image: url(team1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50%;
+        }
+        .container3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .bgimg7{
+            background-image: url(team3.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50%;   
+        
+        }
+
+
+       
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#link1"><span>BR</span> architects</a>
+        <a href="#link2">projects</a>
+        <a href="#link3">about</a>
+        <a href="#link4">contact</a>
+    </nav>
+    <div class="background"></div>
+    <h1>projects</h1>
+   
+    <div class="container">
+        <div class="bgimg1">
+            <div>summer house</div>
+        </div>
+        <div class="bgimg2">
+            <div>brick house</div>
+        </div>
+        <div class="bgimg3">
+            <div>renovated</div>
+        </div>
+        <div class="bgimg4">
+            <div>barn house</div>
+        </div>
+        <div class="bgimg2">
+            <div>summer house</div>
+        </div>
+        <div class="bgimg1">
+            <div>brick house</div>
+        </div>
+        <div class="bgimg4">
+            <div>renovated house</div>
+        </div>
+        <div class="bgimg3">
+            <div>barn house</div>
+        </div>
+
+
+        
+        
+        
+    </div>
+    <h1>about</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, esse?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ea, Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing  Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, impedit.
+    </p>
+    <div class="container2">
+        <div class="box">
+            <div class="bgimg5"></div>
+            <div class="btext">john doe</div>
+            <div class="silvertext">CEO & Founder</div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti ad deserunt?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, delectus! Ipsum, numquam?
+
+            </p>
+           
+        </div>
+        
+        <div class="box">
+            <div class="bgimg6"></div>
+            <div class="btext">jane doe</div>
+            <div class="silvertext">Architect</div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti ad deserunt?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, delectus! Ipsum, numquam?
+
+            </p>
+           
+        </div>
+        <div class="box">
+            <div class="bgimg7"></div>
+            <div class="btext">jane doe</div>
+            <div class="silvertext">Architect</div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti ad deserunt?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, delectus! Ipsum, numquam?
+
+            </p>
+           
+        </div>
+        
+      
+    </div>
+    <div class="container3">
+        <div class="contact">
+            <a href="#">contact</a>
+        </div>
+        <div class="contact">
+            <a href="#">contact</a>
+        </div>
+    </div>
+   
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 1px solid red;
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div id="no2"></div>
+    <script>
+        let div2=document.getElementById("no2")
+        div2.setAttribute("class","box1")
+    </script>
+</body>
+</html>

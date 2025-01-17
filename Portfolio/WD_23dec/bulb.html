@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="OIP.jpg" alt="" id="img1" height="300px" width="300px">
+       
+    </div>
+    <button onclick="lighton()">on</button>
+    <button onclick="lightoff()" >off</button>
+    <script>
+        function lightoff()
+        {
+            let img1=document.getElementById("img1")
+            img1.setAttribute('src','bulb.jpg')
+        }
+        function lighton()
+        {
+            let img1=document.getElementById("img1")
+            img1.setAttribute('src','OIP.jpg')
+        }
+    </script>
+</body>
+</html>

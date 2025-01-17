@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        h1{
+            background-color: aqua;
+            color: black;
+            transition: all;
+            transition-duration: 2s;
+            width: 100px;
+        }
+        h1:hover{
+            width: 50%;
+        }
+        h2{
+            background-color: aqua;
+            color: black;
+            font-weight: 200;
+        }
+        p{
+            color: white;
+            text-align: center;
+
+        }
+        #check:checked ~ p{
+            display: block;
+          
+            z-index: 1;
+            height: 100vh;
+            width: 100%;
+            background-color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+     <h1>about us</h1>
+     <input type="checkbox" name="" id="check">
+     <label for="check">
+        <h2>home</h2>
+     </label>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing <br> Veritatis soluta beatae hic?</p>
+    </div>
+</body>
+</html>

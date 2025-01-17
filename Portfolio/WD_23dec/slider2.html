@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        
+            
+        }
+        div{
+            border: 1px solid red;
+            height: 70px;
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            display: none;
+            background-color: red;
+            padding: 5px 0px 5px 0px;
+            position: relative;
+            bottom: 9px;
+          
+        }
+    </style>
+</head>
+<body>
+   <div>
+     <h1>hello world</h1>
+     <p>hello world</p>
+   </div>
+  
+   
+   
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $('div').click(function (){
+            $('p').slideToggle()
+            
+            $('p').css({display:"block"})
+        })
+    </script>
+</body>
+</html>

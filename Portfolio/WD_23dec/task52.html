@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter password</label>
+    <input type="password" name="" id="fname"><br>
+    <input type="checkbox" name="" id="" onclick="showpassword()">
+    <span>Show password</span>
+    <script>
+        let name=document.getElementById("fname")
+        function showpassword()
+        {
+           
+            if(name.type=="password")
+            {
+                name.type="text"
+            }
+            else{
+                name.type="password"
+            }
+        }
+    </script>
+
+</body>
+</html>

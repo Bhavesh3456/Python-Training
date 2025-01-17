@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            column-gap: 15px;
+            row-gap: 10px;
+            flex-direction: column;
+            
+            
+            
+
+        }
+        .box1{
+            border: 5px solid white;
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            
+           
+
+
+        }
+        .img1{
+            background-image: url(mercedese.jpg);
+            height: 65%;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        
+        .part2{
+            
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 140px;
+            row-gap: 5px;
+
+        }
+        .content{
+            font-size: large;
+            color: black;
+            position: relative;
+            bottom: 50px;
+        }
+        .content1{
+            color: red;
+            font-size: large;
+            position: relative;
+            bottom: 48px;
+            
+        }
+        .small{
+            color: gray;
+            font-size: small;
+            position: relative;
+            top: 3px;
+        }
+        .circle{
+            border: 3px solid red;
+            height: 20px;
+            width: 20px;
+            border-radius: 50px;
+            position: relative;
+            bottom: 10px;
+            margin-left: 5px;
+        }
+        .part3{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .circle2{
+            border: 3px solid yellow;
+            height: 20px;
+            width: 20px;
+            border-radius: 40px;
+            position: relative;
+            bottom: 10px;
+            margin-left: 5px;
+
+        }
+        .circle3{
+            border: 3px solid  green;
+            height: 20px;
+            width: 20px;
+            border-radius: 30px;
+            position: relative;
+            bottom: 10px;
+            margin-left: 5px;
+        }
+        .circle4,.circle5,.circle6{
+            border: 1px solid gray;
+            height: 20px;
+            width: 20px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+            left: 110px;
+            margin-left: 10px;
+        }
+        .part4{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+        }
+        i{
+            height: 10px;
+            width: 10px;
+            position: relative;
+            top: 50px;
+        }
+        .rate{
+            color: gray;
+            position: relative;
+            top: 50px;
+        }
+        .purchase{
+            color: purple;
+            font-size: large;
+            position: relative;
+            left: 200px;
+            top: 50px;
+            text-transform: uppercase;
+
+        }
+        .box2{
+            border: 5px solid white;
+            border-radius: 10px;
+            background-color: white;
+            height: 100px;
+            width: 200px;
+        }
+        .img2{
+            background-image: url(rolls\ royce.jpg);
+            height: 65%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .division1,.division2{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            justify-content: center;
+        }
+        .box3{
+            border: 5px solid white;
+            height: 75px;
+            width: 300px;
+            border-radius: 20px;
+            background-color: white;
+            position: relative;
+            
+            display: flex;
+            column-gap: 80px;
+            flex-wrap: wrap;
+
+        }
+        .content3{
+            padding: 15px;
+            font-size: large;
+            text-transform: capitalize;
+
+        }
+        div > p{
+            color: red;
+            text-transform: uppercase;
+            font-size: large;
+            position: relative;
+            bottom: 8px;
+        }
+        .content4{
+            padding: 15px;
+            border: 5px solid purple;
+            background-color: purple;
+            color: white;
+            height: 45px;
+            width: 80px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            text-align: center;
+            font-size: large;
+            padding-right: 25px;
+            position: relative;
+            left: 175px;
+            bottom: 110px;
+        
+        }
+        .offer{
+            color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            height: 25px;
+            width: 35px;
+            background-color: red;
+            position: relative;
+            top: 5px;
+        
+        }
+        .fa-heart{
+            background-color: white;
+            border: 1px solid white;
+            text-align: center;
+            border-radius: 25px;
+            height: 20px;
+            width: 20px;
+            position: relative;
+            left: 280px;
+            bottom: 15px;
+            
+        
+            
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="division1">
+            <div class="box1">
+                <div class="img1">
+                    <div class="offer">-25%</div>
+                    <span class="fa-regular fa-heart"></span>
+    
+                </div>
+                <div class="part2">
+                    <div class="content">Lorem ipsum <br> dolor sit.</div>
+                    <div class="content1">$3.99 <br><div class="small">$5.99</div></div>
+                  
+                </div>
+                <div class="part3">
+                    <span class="circle"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4">s</span>
+                    <span class="circle5">m</span>
+                    <span class="circle6">l</span>
+                </div>
+                <div class="part4">
+                    <i class="fa-regular fa-star"></i><span class="rate">4.8</span>
+                    <span class="purchase">buy+</span>
+                </div>
+    
+    
+    
+               
+            </div>
+            <div class="box1">
+                <div class="img2">
+                    <div class="offer">-25%</div>
+                    <span class="fa-regular fa-heart"></span>
+    
+                </div>
+                <div class="part2">
+                    <div class="content">Lorem ipsum <br> dolor sit.</div>
+                    <div class="content1">$3.99 <br><div class="small">$5.99</div></div>
+                  
+                </div>
+                <div class="part3">
+                    <span class="circle"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4">s</span>
+                    <span class="circle5">m</span>
+                    <span class="circle6">l</span>
+                </div>
+                <div class="part4">
+                    <i class="fa-regular fa-star"></i><span class="rate">4.8</span>
+                    <span class="purchase">buy+</span>
+                </div>
+    
+    
+    
+               
+            </div>
+            <div class="box1">
+                <div class="img2">
+                    <div class="offer">-25%</div>
+                    <span class="fa-regular fa-heart"></span>
+    
+                </div>
+                <div class="part2">
+                    <div class="content">Lorem ipsum <br> dolor sit.</div>
+                    <div class="content1">$3.99 <br><div class="small">$5.99</div></div>
+                  
+                </div>
+                <div class="part3">
+                    <span class="circle"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4">s</span>
+                    <span class="circle5">m</span>
+                    <span class="circle6">l</span>
+                </div>
+                <div class="part4">
+                    <i class="fa-regular fa-star"></i><span class="rate">4.8</span>
+                    <span class="purchase">buy+</span>
+                </div>
+    
+    
+    
+               
+            </div>
+
+        </div>
+        <div class="division2">
+            <div class="box3">
+                <div class="content3">monday offer <br> <p> #monnap </p></div>
+                <div class="content4">20% <br> off</div>
+               
+            </div>
+            <div class="box3">
+                <div class="content3">monday offer <br> <p> #monnap </p></div>
+                <div class="content4">20% <br> off</div>
+               
+            </div>
+            <div class="box3">
+                <div class="content3">monday offer <br> <p> #monnap </p></div>
+                <div class="content4">20% <br> off</div>
+               
+            </div>
+        </div>
+    
+
+       
+       
+       
+       
+    
+    </div>
+   
+</body>
+</html>

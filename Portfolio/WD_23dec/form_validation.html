@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="" onsubmit="return validateform()">
+    <input type="text" name="" id="fname" placeholder="enter your name"><br>
+    <input type="tel" name="" id="number" placeholder="enter your number"><br>
+    <input type="password" name="" id="pass" placeholder="enter your "><br>
+    <input type="text" name="" id="email" placeholder="enter email">
+    <input type="password" name="" id="c_pass">
+    <input type="submit" name="" id="">
+   </form>
+   <script>
+   function validateform()
+   {
+    let name=document.getElementById("fname").value;
+    let pass=document.getElementById("pass").value;
+    let cpass=document.getElementById("c_pass").value;
+    let number=document.getElementById("number").value;
+    let email=document.getElementById("email").value;
+
+    if(name=="" || name==null)    
+    {
+        alert("name is not given")
+        
+    }
+    if(pass != cpass)
+    {
+        alert("password and confirm password are not matched")
+       
+       
+        
+    }
+    if(isNaN(number) && (number.length<1 && number.length>10) && number=="")
+    {
+        alert("enter your number properly")
+
+    }
+    if(email===Number)
+    {
+        alert("enter email properly")
+    }
+    
+
+   
+    
+   }
+   </script>
+
+</body>
+</html>

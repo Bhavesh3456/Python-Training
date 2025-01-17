@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="scope1"></div>
+    <div class="scope1"></div>
+    <div class="scope1" id="div1"></div>
+    <script>
+        let division=document.querySelector("div")
+        let division2=document.getElementById("div1")
+        division.setAttribute('class','scope2')
+        console.log(division.innerHTML);
+        division2.setAttribute('class','scope3')
+
+    </script>
+</body>
+</html>

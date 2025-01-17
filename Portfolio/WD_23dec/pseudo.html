@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::before{
+            content: "this is p tag";
+            background-color: yellow;
+
+
+        }
+        p::after{
+            content: "after psuedo element";
+            color: gray;
+
+        }
+        li::marker{
+            color: gold;
+        }
+        p::selection{
+            background-color: brown;
+            color: white;
+        }
+        p::first-letter{
+            font-size: 50px;
+            color: red;
+        }
+        p::first-line{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, reiciendis sed? Cum?</p>
+    <ul>
+        <li>h</li>
+        <li>e</li>
+        <li>l</li>
+        <li>l</li>
+        <li>o</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+      
+       nav{
+         background-color: white;
+         display: flex;
+         flex-wrap: wrap;
+         position: fixed;
+         width: 100%;
+         box-shadow: grey 2px 2px;
+
+
+       }
+        span{
+         color: black;
+         font-size: larger;
+         width: 70%;
+         padding: 20px;
+         text-transform: capitalize;
+         font-size: larger;
+        }
+        a{
+            color: black;
+            padding: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: larger;
+            padding-left: 20px;
+        }
+        a:hover{
+            background-color: gray;
+        }
+        .bgimg{
+            background-image: url(hamburger.jpg);
+            height: 900px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px solid white;
+
+        }
+       .bgimg h1{
+            font: 36px "Playfair Display";
+            color: grey;
+            text-transform: capitalize;
+            padding-top: 800px;
+    
+            
+        }
+        .container,.container2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            column-gap: 150px;
+        
+
+        }
+        .container .bgimage{
+            background-image: url(tablesetting2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            width: 500px;
+        }
+        .biggertext{
+            color: gray;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            line-height: 60px;
+            font-size: 45px;
+        }
+        .biggertext h2{
+            color: gray;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: "IM Fell DW Pica", serif;
+            font-weight: 400;
+            
+        }
+        .biggertext h5{
+            color: gray;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: "IM Fell DW Pica", serif;
+            font-weight: 400;
+            
+        }
+        .biggertext p{
+            color: black;
+            font-size: 20px;
+            line-height: 2px;
+        }
+        .biggertext .whitetext{
+            color: gray;
+            line-height: 2px;
+        }
+        .part1 h1{
+            font-family: "IM Fell DW Pica", serif;
+            text-transform: capitalize;
+            color: black;
+            line-height: 60px;
+            text-align: center;
+        }
+        .part1 h3{
+            color: black;
+            text-transform: capitalize;
+            text-align: start;
+            font-family: "IM Fell DW Pica", serif;
+            line-height: 10px;
+            font-size: 25px;
+
+        }
+        .bgimg2{
+            background-image: url(tablesetting.jpg);
+            height: 700px;
+            width: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+        .part1 p{
+            color: gray;
+            font-size: 15px;
+            font-family: "IM Fell DW Pica", serif;
+            line-height: 30px;
+
+        }
+        .container ~ h1{
+            color: black;
+            text-align: left;
+            padding-left: 90px;
+            line-height: 70px;
+            text-transform: capitalize;
+
+        }
+        .container ~ p{
+            padding-left: 90px;
+            line-height: 2px;
+        }
+        br + .service{
+            color: gray;
+            text-transform: capitalize;
+            font-size: 20px;
+            padding-left: 90px;
+            line-height: 60px;
+        }
+        input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid gray;
+            margin-left: 90px;
+            margin-top: 25px;
+            width: 900px;
+
+        }
+        input[placeholder="Name"]{
+            color: grey;
+            font-size: large;
+            
+            padding: 10px 5px;
+        }
+        input[type="number"]{
+            color: grey;
+            font-size: large;
+            
+            padding: 10px 5px;
+        }
+        input[placeholder="Message"]{
+            color: grey;
+            font-size: large;
+            
+            padding: 10px 5px;
+        }
+        .box-border{
+            color: black;
+            text-transform: uppercase;
+            background-color: grey;
+            padding: 5px 5px;
+            width: 130px;
+            margin-left: 90px;
+            margin-top: 15px;
+        }
+        @media (min-width: 100px) and (max-width: 700px) { 
+            .bgimg{
+                width: 100%;
+                background-position: center;
+                height: 700px;
+            }
+            .bgimg h1{
+                padding: 10px 5px;
+            }
+            .service{
+                line-height: 10px;
+            }
+            .container ~ p{
+                line-height: 20px;
+                width: 50%;
+    
+                font-size: medium;
+                
+            }
+
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <span>gourmet au catering</span>
+        <a href="#link2">about</a>
+        <a href="#link3">menu</a>
+        <a href="">contact</a>
+
+    </nav>
+    <div class="bgimg">
+        <h1>le catering</h1>
+
+    </div>
+    <div class="container">
+        <div class="bgimage"></div>
+        <div class="biggertext">
+            <a name="link2"></a>
+
+            <h2>about catering</h2>
+            <h5>Tradition since 1889</h5>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum</p>
+            <p>dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,</p>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <p>nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in</p>
+            <p>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+            <p>pariatur.We only use seasonal ingredients.</p> <br>
+            <p class="whitetext">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</p>
+            <p class="whitetext">officia deserunt mollit anim id est laborum consectetur adipiscing</p>
+           
+
+            
+
+
+        </div>
+
+
+    </div>
+    <div class="container2">
+       <div class="part1">
+        <a name="link3"></a>
+        <h1>Our Menu</h1>
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+        <h3>Honey Almond Granola with Fruits</h3>
+        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+        <h3>Belgian Waffle</h3>
+        <p>Vanilla flavored batter with malted flour 7.50</p>
+        <h3>Scrambled eggs</h3>
+        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+
+       </div>
+       <div class="bgimg2"></div>
+    
+    </div>
+    <h1>contact</h1>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p>Do not hesitate to contact us.</p><br>
+    <div class="service">Catering Service, 42nd Living St, 43043 New York, NY</div>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <input type="text" name="" id="" placeholder="Name">
+    <input type="number" name="" id="" placeholder="How many people ">
+    <input type="datetime-local" name="" id="">
+    <input type="text" name="" id="" placeholder="Message">
+    <div class="box-border">send message</div>
+
+
+</body>

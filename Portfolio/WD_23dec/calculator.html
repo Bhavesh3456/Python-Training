@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 40px;
+            width: 40px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 5px;
+        }
+        .container1{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>Math operation</h1></center>
+    <label for="">Enter 1st number</label>
+    <input type="number" name="" id="inp1"><br>
+    <label for="">Enter 2nd number</label>
+    <input type="number" name="" id="inp2">
+    <div class="container">
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button>*</button>
+    </div>
+    <div class="container1">
+        <button>/</button>
+        <button>%</button>
+        
+    </div>
+    <div> Answer is <span id="result"> </span></div>
+    <script>
+        let inp1=document.getElementById("inp1")
+        let inp2=document.getElementById("inp2")
+        let result=document.getElementById("result")
+        function add()
+        {
+            let ans=Number(inp1.value)+ Number(inp2.value);
+            result.innerHTML=ans
+            return ans
+        
+        }
+        function subtract()
+        {
+            let ans=Number(inp1.value)- Number(inp2.value);
+            result.innerHTML=ans;
+            return ans
+        
+        }        
+    </script>
+</body>
+</html>

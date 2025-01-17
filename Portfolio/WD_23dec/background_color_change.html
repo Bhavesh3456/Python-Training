@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="Darkmode()" >Dark Mode</button>
+    <button onclick="light()">Light Mode</button>
+    <script>
+        function Darkmode()
+        {
+            let body=document.querySelector("body")
+            
+
+            body.style.backgroundColor="black"
+            body.style.color="white"
+
+
+            
+        }
+        function light()
+        {
+            let body=document.querySelector("body")
+            body.style.backgroundColor="white"
+            body.style.color="black"
+
+        }
+
+    </script>
+</body>
+</html>
